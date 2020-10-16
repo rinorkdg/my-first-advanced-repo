@@ -8,17 +8,27 @@
 	</head>
 	<body>
     <style>
-        *{
+        body{
             font-family: "Courier New", Courier, monospace;
             color: white;
             background-color: #1a1a1a;
         }
     </style>
         
+    <div id="wrapper">
         <h1>Code Wasteland</h1>
-        <h2>Buttons will appear below</h2>
+        <h2>Change the background below!</h2>
+        <button onclick="BgGrey()">Grey</button>
+        <button onclick="BgRed()">Red</button>
+    </div>
         
     <script>
+        function BgRed(){
+            document.body.style.backgroundColor = "#691500";
+        }
+        function BgGrey(){
+            document.body.style.backgroundColor = "#1a1a1a";
+        }
     </script>
 	</body>
 </html>
